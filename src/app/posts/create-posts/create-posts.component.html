@@ -1,0 +1,11 @@
+<div class="example-container">
+  <mat-card>
+    <mat-form-field>
+      <mat-label>Leave a comment</mat-label>
+      <textarea matInput placeholder="Leave a comment" #textArea></textarea>
+    </mat-form-field>
+  </mat-card>
+</div>
+<hr>
+<button mat-raised-button color="primary" (click)="onPostAdd(textArea)">Save Post</button>
+<p>{{newPost}}</p>
